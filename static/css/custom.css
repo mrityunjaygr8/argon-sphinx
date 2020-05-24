@@ -1,0 +1,49 @@
+:root {
+    --navbar-height: 4rem;
+    --footer-height: 2rem;
+}
+
+section,
+.section {
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar {
+    height: var(--navbar-height);
+}
+
+
+#sidebar-left {
+    word-wrap: break-word;
+    padding: 0 20px;
+    background-color: #e9ecef;
+}
+
+#sidebar-left ul {
+    padding-left: 0;
+    /* border-left: solid 2px #333333 ; */
+}
+
+#sidebar-left p.caption {
+    display: none;
+}
+
+#sidebar-left ul li {
+    list-style: none;
+}
+
+ol.breadcrumb {
+    background-color: initial;
+}
+
+@media (min-width: 576px) {
+    #sidebar-left {
+        height: calc(100vh - var(--navbar-height))
+    }
+}
+
