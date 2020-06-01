@@ -20,22 +20,31 @@ section,
 
 #sidebar-left {
     word-wrap: break-word;
-    padding: 0 20px;
+    padding-left: 20px ;
     background-color: #e9ecef;
 }
 
-#sidebar-left ul {
-    padding-left: 0;
-    /* border-left: solid 2px #333333 ; */
+#sidebar-left ul,
+#sidebar-right ul,
+.toctree-wrapper ul {
+    padding-left: 0px;
 }
 
 #sidebar-left p.caption {
     display: none;
 }
 
-#sidebar-left ul li {
-    list-style: none;
+#sidebar-right ul li,
+.toctree-l1,
+.toctree-l2,
+.toctree-l3,
+.toctree-l4 {
+    margin-left: 20px;
 }
+
+/* #sidebar-left ul li {
+    list-style: none;
+} */
 
 ol.breadcrumb {
     background-color: initial;
